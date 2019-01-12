@@ -48,14 +48,14 @@
             </div>
         </div>
         <!-- /ALERT -->
-        
+
         <!-- CALLOUT -->
         <div class="row">
             <div class="col-xs-12">
                 <section class="callout jumbotron text-center">
                     <h1>The definitive roofing company</h1>
                     <p class="lead">Sign up today to get our <strong><mark>weekly deal</mark></strong> from over <s class="hidden-xs">€100</s> <span class="visible-xs"><br></span>you <strong>save 10%</strong>! Stop your expenses from going through the roof!</p>
-                    <p><button class="btn btn-lg btn-success">Get your deal!</button></p>
+                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Get your deal!</button></p>
                     <p class="text-muted"><small>For new contracts only.</small></p>
                 </section>
             </div>
@@ -191,6 +191,43 @@
 
 
     </article>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign up and get FREE Raffle Tickets!</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block">We'll never share your email address with anyone</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="password-check">Repeat Password</label>
+                            <input type="password" class="form-control" id="password-check" placeholder="Repeat Your Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign Up!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
