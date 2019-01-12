@@ -6,64 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>RoofUS - When you need US, we roof!</title>
 </head>
 
 <body>
     <!-- NAV -->
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- LOGO -->
-            <div class="navbar-header">
-                <a href="/" class="navbar-brand">
-                    <p>RoofUS</p>
-                </a>
+        <div class="container-fluid alert-container">
+            <!-- ALERT 
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="site-widealert alert-warning">
+                        <strong>Sale Now On!!</strong> We have a sale on now! Subscribe and get two FREE tickets for our next raffle! <a href="#">Click here for more details!</a>
+                    </div>
+                </div>
             </div>
-            <!-- /LOGO -->
+        </div>
+        <!-- /ALERT -->
+        <div class="container-fluid">
+            <div class="opaque-overlay">
+                <!-- LOGO -->
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">
+                        <p>RoofUS</p>
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+                <!-- /LOGO -->
 
-            <!-- NAVBAR -->
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li class="visible-xs"><a href="/">Sign in!</a></li>
-            </ul>
-            <!-- NAVBAR -->
-
-            <!-- MESSAGE -->
-            <div class="navbar-header navbar-right hidden-xs">
-                <a href="/login" class="btn btn-default navbar-btn">Sign up!</a>
+                <!-- NAVBAR -->
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li class="visible-xs"><a href="/">Sign in!</a></li>
+                    </ul>
+                    <div class="navbar-header navbar-right hidden-xs">
+                        <a href="/login" class="btn btn-defaul navbar-btn">Sign Up!</a>
+                        <p class="navbar-text">The best roofing solutions</p>
+                    </div>
+                </div>
+                <!-- NAVBAR -->
             </div>
         </div>
     </nav>
     <!-- /NAVBAR -->
 
 
-    <article class="container">
-        <!-- ALERT -->
-        <div class="row hidden-xs">
-            <div class="col-xs-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!!</strong> We have a sale on now! Subscribe and get two FREE tickets for our next raffle! <a href="#">Click here for more details!</a>
-                </div>
-            </div>
-        </div>
-        <!-- /ALERT -->
 
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp</div>
         <!-- CALLOUT -->
         <div class="row">
             <div class="col-xs-12">
                 <section class="callout jumbotron text-center">
                     <h1>The definitive roofing company</h1>
                     <p class="lead">Sign up today to get our <strong><mark>weekly deal</mark></strong> from over <s class="hidden-xs">€100</s> <span class="visible-xs"><br></span>you <strong>save 10%</strong>! Stop your expenses from going through the roof!</p>
-                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Get your deal!</button></p>
+                    <hr class="hr align-center">
+                    <p><button class="btn btn-lg btn-light" data-toggle="modal" data-target="#signUpModal">Get your deal!</button></p>
                     <p class="text-muted"><small>For new contracts only.</small></p>
                 </section>
             </div>
         </div>
-        <!-- /CALLOUT -->
+    </div>
+    <!-- /CALLOUT -->
 
-        <!-- QUOTES -->
-
+    <!-- QUOTES -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
                 <div class="col-xs-12">
@@ -102,10 +118,12 @@
                 </div>
             </div>
         </section>
-        <!-- /QUOTES -->
+    </div>
+    <!-- /QUOTES -->
 
 
-        <!-- FEATURES -->
+    <!-- FEATURES -->
+    <div class="container features-container">
         <section class="features">
             <div class="row">
                 <div class="col-xs-12">
@@ -138,10 +156,12 @@
                 </div>
             </div>
         </section>
-        <!-- /FEATURES -->
+    </div>
+    <!-- /FEATURES -->
 
 
-        <!-- TOP 5-->
+    <!-- TOP 5-->
+    <div class="div container table-container">
         <div class="row">
             <section class="col-xs-12">
                 <div class="table">
@@ -187,12 +207,13 @@
                 </div>
             </section>
         </div>
-        <!-- /TOP 5 TABLE -->
+    </div>
+    <!-- /TOP 5 TABLE -->
 
 
     </article>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    <button type="button" class="btn btn-primary btn-lg hidden" data-toggle="modal" data-target="#myModal">
         Launch demo modal
     </button>
 
